@@ -32,8 +32,6 @@
     svg{display:block;flex:none}
     .hero{display:grid;grid-template-columns:1.08fr 1fr;align-items:center;gap:20px;flex:1;padding:38px 0 34px}
     .copy{position:relative;z-index:1;animation:arrive .65s var(--ease) both}
-    .eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 24px;font-size:18px;font-weight:600;color:var(--blue)}
-    .eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--blue)}
     h1{font-weight:600;font-size:clamp(52px,5.6vw,84px);line-height:1.06;letter-spacing:-.065em;margin:0}
     h1 span{display:block;color:var(--blue)}
     .description{max-width:480px;font-size:23px;line-height:1.5;margin:26px 0 32px;color:var(--muted);letter-spacing:-.4px}
@@ -65,7 +63,7 @@
     .tl{left:-6px;top:-6px}.tr{right:-6px;top:-6px}.bl{left:-6px;bottom:-6px}.br{right:-6px;bottom:-6px}
     .scan{position:absolute;left:0;right:0;height:50px;border-bottom:2px solid #0372f9;background:linear-gradient(transparent,#0372f91c);animation:scan 2.4s .5s var(--ease) both}
     .capture-label{position:absolute;top:-17px;left:22px;display:flex;align-items:center;gap:7px;background:var(--blue);color:#fff;padding:3px 12px;font-size:18px;font-weight:600;line-height:1.45;border-radius:6px;white-space:nowrap}
-    .mascot{position:absolute;left:0;bottom:18px;width:154px;height:auto;filter:drop-shadow(0 12px 5px #001c3e0b);transform:rotate(-5deg)}
+    .mascot{position:absolute;left:0;bottom:18px;width:190px;height:auto;filter:drop-shadow(0 12px 5px #001c3e0b);transform:rotate(-5deg)}
     .result{position:absolute;bottom:13px;left:32%;min-width:240px;display:flex;align-items:center;gap:13px;padding:15px 19px;border:1px solid #dce6f2;border-radius:12px;background:#fff;box-shadow:0 10px 35px #001c3e0a;transform:rotate(2deg)}
     .result-icon{display:grid;place-items:center;width:42px;height:42px;background:var(--tint);border-radius:50%;color:var(--blue)}
     .result-title{font-size:19px;font-weight:600;letter-spacing:-.4px;white-space:nowrap}
@@ -80,15 +78,15 @@
     .footer a{transition:color .18s}
     @keyframes arrive{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
     @keyframes scan{0%{top:0;opacity:0}12%{opacity:1}85%{opacity:1}100%{top:calc(100% - 50px);opacity:0}}
-    @media(min-width:1000px) and (max-height:800px){.page{padding-top:24px;padding-bottom:20px}.hero{padding:25px 0}.art{height:440px}.browser{height:342px}.capture-frame{height:378px}.paper-shadow{height:334px}.description{margin:22px 0 25px}.eyebrow{margin-bottom:18px}h1{font-size:clamp(52px,5.3vw,75px)}}
-    @media(min-width:1000px) and (max-height:700px){.art{height:400px}.browser{height:310px}.capture-frame{height:346px}.paper-shadow{height:300px}.result{bottom:0}.mascot{width:130px}.hero{padding:20px 0}.features{padding:16px 0}}
-    @media(max-width:1100px){.page{padding-left:36px;padding-right:36px}.hero{gap:4px}.art{height:460px}.browser{height:370px;left:17%;width:74%}.capture-frame{left:calc(17% - 15px);width:calc(74% + 30px);height:406px}.paper-shadow{height:360px}.result{left:27%;min-width:220px}.mascot{width:135px}.description{font-size:22px}}
+    @media(min-width:1000px) and (max-height:800px){.page{padding-top:24px;padding-bottom:20px}.hero{padding:25px 0}.art{height:440px}.browser{height:342px}.capture-frame{height:378px}.paper-shadow{height:334px}.description{margin:22px 0 25px}h1{font-size:clamp(52px,5.3vw,75px)}}
+    @media(min-width:1000px) and (max-height:700px){.art{height:400px}.browser{height:310px}.capture-frame{height:346px}.paper-shadow{height:300px}.result{bottom:0}.mascot{width:160px}.hero{padding:20px 0}.features{padding:16px 0}}
+    @media(max-width:1100px){.page{padding-left:36px;padding-right:36px}.hero{gap:4px}.art{height:460px}.browser{height:370px;left:17%;width:74%}.capture-frame{left:calc(17% - 15px);width:calc(74% + 30px);height:406px}.paper-shadow{height:360px}.result{left:27%;min-width:220px}.mascot{width:165px}.description{font-size:22px}}
     @media(max-width:800px){
       .page{padding:22px 28px 20px}.header{min-height:48px}.brand{font-size:21px;gap:11px}.brand img{width:48px;height:43px}.header-link{font-size:18px}.header-link svg{display:none}
-      .hero{grid-template-columns:1fr;padding:30px 0 20px;gap:25px;align-content:center}.copy{text-align:center}.eyebrow{justify-content:center;margin:0 0 15px}h1{font-size:60px;line-height:1.06}.description{margin:20px auto 24px;max-width:490px;font-size:22px}.install-note{margin-top:12px}.art{width:440px;height:330px;margin:0 auto;max-width:100%}.wash{inset:12px -8px 0}.browser{top:21px;left:25%;width:59%;height:260px}.browser-bar{height:30px}.browser-content{padding:16px}.mock-heading{height:10px;margin-bottom:8px}.mock-heading.short{height:10px;margin-bottom:14px}.mock-photo{height:78px}.mock-lines{gap:6px;margin-top:13px}.mock-lines i{height:5px}.mock-bottom{margin-top:12px;gap:9px}.mock-bottom i{height:40px}.capture-frame{top:7px;left:calc(25% - 12px);width:calc(59% + 24px);height:290px}.paper-shadow{top:40px;left:32%;width:55%;height:250px}.capture-label{font-size:18px;left:13px}.result{bottom:0;left:34%;min-width:210px;padding:10px 15px;gap:10px}.mascot{left:4%;width:112px;bottom:8px}.spark{right:3%;width:24px}.features{justify-content:center;flex-wrap:wrap;gap:14px 24px;padding:20px 0}.feature:last-child{margin-left:0}.footer{padding-top:4px}
+      .hero{grid-template-columns:1fr;padding:30px 0 20px;gap:25px;align-content:center}.copy{text-align:center}h1{font-size:60px;line-height:1.06}.description{margin:20px auto 24px;max-width:490px;font-size:22px}.install-note{margin-top:12px}.art{width:440px;height:330px;margin:0 auto;max-width:100%}.wash{inset:12px -8px 0}.browser{top:21px;left:25%;width:59%;height:260px}.browser-bar{height:30px}.browser-content{padding:16px}.mock-heading{height:10px;margin-bottom:8px}.mock-heading.short{height:10px;margin-bottom:14px}.mock-photo{height:78px}.mock-lines{gap:6px;margin-top:13px}.mock-lines i{height:5px}.mock-bottom{margin-top:12px;gap:9px}.mock-bottom i{height:40px}.capture-frame{top:7px;left:calc(25% - 12px);width:calc(59% + 24px);height:290px}.paper-shadow{top:40px;left:32%;width:55%;height:250px}.capture-label{font-size:18px;left:13px}.result{bottom:0;left:34%;min-width:210px;padding:10px 15px;gap:10px}.mascot{left:4%;width:130px;bottom:8px}.spark{right:3%;width:24px}.features{justify-content:center;flex-wrap:wrap;gap:14px 24px;padding:20px 0}.feature:last-child{margin-left:0}.footer{padding-top:4px}
     }
     @media(max-width:480px){
-      .page{padding:18px 22px 17px}.header{gap:12px}.brand{font-size:18px;letter-spacing:-.4px;gap:9px}.brand img{width:41px;height:38px}.header-link{font-size:18px}.hero{padding:23px 0 18px;gap:20px}.eyebrow{font-size:18px;margin-bottom:12px}h1{font-size:clamp(42px,11.6vw,54px)}.description{font-size:20px;line-height:1.45;margin:17px auto 20px;max-width:340px}.install{min-height:58px;padding:13px 21px;font-size:20px}.install-note{font-size:18px;margin-top:10px}.art{height:235px;width:326px}.browser{top:18px;left:27%;width:60%;height:190px}.browser-bar{height:26px;padding:0 10px}.browser-content{padding:12px}.mock-heading{height:8px;margin-top:0;margin-bottom:6px}.mock-heading.short{height:8px;margin-bottom:10px}.mock-photo{height:52px}.mock-lines{margin-top:10px;gap:5px}.mock-lines i{height:4px}.mock-bottom{margin-top:10px}.mock-bottom i{height:30px}.capture-frame{top:4px;left:calc(27% - 10px);width:calc(60% + 20px);height:217px}.capture-label{padding:2px 9px;left:8px;font-size:18px}.paper-shadow{top:31px;left:34%;width:56%;height:180px}.mascot{width:92px;left:0;bottom:0}.result{left:auto;right:0;bottom:-3px;min-width:0;padding:8px 12px;gap:8px;transform:rotate(2deg)}.result-title{font-size:18px}.result-formats{font-size:18px}.result-icon{width:30px;height:30px}.result-icon svg{width:18px;height:18px}.spark{right:-2px;top:-3px;width:20px}.features{display:none}.footer{font-size:18px;border-top:1px solid var(--line);padding-top:16px;gap:12px}.footer .copyright-name{display:none}
+      .page{padding:18px 22px 17px}.header{gap:12px}.brand{font-size:18px;letter-spacing:-.4px;gap:9px}.brand img{width:41px;height:38px}.header-link{font-size:18px}.hero{padding:23px 0 18px;gap:20px}h1{font-size:clamp(42px,11.6vw,54px)}.description{font-size:20px;line-height:1.45;margin:17px auto 20px;max-width:340px}.install{min-height:58px;padding:13px 21px;font-size:20px}.install-note{font-size:18px;margin-top:10px}.art{height:235px;width:326px}.browser{top:18px;left:27%;width:60%;height:190px}.browser-bar{height:26px;padding:0 10px}.browser-content{padding:12px}.mock-heading{height:8px;margin-top:0;margin-bottom:6px}.mock-heading.short{height:8px;margin-bottom:10px}.mock-photo{height:52px}.mock-lines{margin-top:10px;gap:5px}.mock-lines i{height:4px}.mock-bottom{margin-top:10px}.mock-bottom i{height:30px}.capture-frame{top:4px;left:calc(27% - 10px);width:calc(60% + 20px);height:217px}.capture-label{padding:2px 9px;left:8px;font-size:18px}.paper-shadow{top:31px;left:34%;width:56%;height:180px}.mascot{width:110px;left:0;bottom:0}.result{left:auto;right:0;bottom:-3px;min-width:0;padding:8px 12px;gap:8px;transform:rotate(2deg)}.result-title{font-size:18px}.result-formats{font-size:18px}.result-icon{width:30px;height:30px}.result-icon svg{width:18px;height:18px}.spark{right:-2px;top:-3px;width:20px}.features{display:none}.footer{font-size:18px;border-top:1px solid var(--line);padding-top:16px;gap:12px}.footer .copyright-name{display:none}
     }
     @media(max-width:480px) and (max-height:760px){.page{padding-top:14px;padding-bottom:12px}.hero{padding-top:16px;padding-bottom:12px;gap:16px}.art{height:210px}.browser{height:174px}.capture-frame{height:201px}.paper-shadow{height:169px}.description{margin:13px auto 16px}.footer{padding-top:12px}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.scan{display:none}}
@@ -103,17 +101,16 @@
     </header>
     <main class="hero" id="main">
       <div class="copy">
-        <p class="eyebrow">A little tool. The full picture.</p>
-        <h1>The whole page.<span>In one shot.</span></h1>
-        <p class="description">Capture a webpage from top to bottom.<br>Save it as PNG or PDF. Right in Chrome.</p>
+        <h1>Screenshot <span>Extension</span></h1>
+        <p class="description">Capture full webpages in one click.<br>Save as PNG or PDF. Processed locally in your browser.</p>
         <a class="install" href="https://chromewebstore.google.com/detail/screenshot-extension/mfinafjkbligcjbccappofiadgelfnbb">
           <svg width="27" height="27" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.6h9M8.2 14.2l-4.5-7.8M14.2 15.8l-4.5 7.8" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
           Add to Chrome
           <svg class="arrow" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
         </a>
-        <p class="install-note">Processed locally in your browser.</p>
+        <p class="install-note">Available in the Chrome Web Store.</p>
       </div>
-      <div class="art" role="img" aria-label="Illustration: a whole webpage captured from top to bottom and saved as PNG or PDF, with the Screenshot Extension camera mascot.">
+      <div class="art" role="img" aria-label="Illustration: a whole webpage captured from top to bottom and saved as PNG or PDF, with the cheerful Screenshot Extension camera mascot waving hello.">
         <div class="wash"></div><div class="paper-shadow"></div>
         <div class="browser" aria-hidden="true">
           <div class="browser-bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="address"></i></div>
