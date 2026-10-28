@@ -7,15 +7,26 @@
     var icCopy = copyBtn.querySelector('.ic-copy');
     var icDone = copyBtn.querySelector('.ic-done');
     var timer;
-    copyBtn.addEventListener('click', function () {
-      try { if (navigator.clipboard) navigator.clipboard.writeText(window.location.href).catch(function () {}); } catch (e) {}
-      label.textContent = 'Link copied';
-      icCopy.hidden = true; icDone.hidden = false;
+    copyBtn.addEventListener('click', async function () {
+      if (copyBtn.disabled) return;
       clearTimeout(timer);
+      copyBtn.disabled = true;
+      label.textContent = 'Copying…';
+      icCopy.toggleAttribute('hidden', false); icDone.toggleAttribute('hidden', true);
+      var copied = false;
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        copied = true;
+        label.textContent = 'Link copied';
+        icCopy.toggleAttribute('hidden', true); icDone.toggleAttribute('hidden', false);
+      } catch (e) {
+        label.textContent = 'Copy failed. Try again.';
+      }
+      copyBtn.disabled = false;
       timer = setTimeout(function () {
         label.textContent = 'Copy link';
-        icCopy.hidden = false; icDone.hidden = true;
-      }, 2000);
+        icCopy.toggleAttribute('hidden', false); icDone.toggleAttribute('hidden', true);
+      }, copied ? 2000 : 4000);
     });
   }
 
