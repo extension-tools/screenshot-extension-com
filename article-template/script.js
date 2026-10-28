@@ -48,6 +48,8 @@
     function takeFile(file) {
       if (!file) return;
       if (!/^image\/(png|jpeg)$/.test(file.type)) {
+        fileEl.textContent = '';
+        idle.hidden = false; done.hidden = true; actions.hidden = true;
         title.textContent = 'Use a PNG or JPEG file';
         return;
       }

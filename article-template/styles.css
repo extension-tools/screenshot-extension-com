@@ -98,4 +98,6 @@ a:focus-visible,button:focus-visible{outline:none;box-shadow:0 0 0 2px #FFFFFF,0
 }
 
 .drop-idle,.drop-done{display:flex;flex-direction:column;gap:4px;align-items:center}
+.drop-done{max-width:100%}
+.drop-file{max-width:100%;overflow-wrap:anywhere}
 [hidden]{display:none!important}
