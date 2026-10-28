@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to take full page screenshot in Chrome: capture, check, share</title>
+<meta name="description" content="Learn how to take full page screenshot in Chrome with built-in tools, check missing content, and choose an image or PDF for sharing. Explore Okea’s current workflow.">
+<link rel="canonical" href="https://screenshot-extension.com/blog/how-to-take-full-page-screenshot-in-chrome/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to take full page screenshot in Chrome: capture, check, share">
+<meta property="og:description" content="Learn how to take full page screenshot in Chrome with built-in tools, check missing content, and choose an image or PDF for sharing. Explore Okea’s current workflow.">
+<meta property="og:url" content="https://screenshot-extension.com/blog/how-to-take-full-page-screenshot-in-chrome/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/article-template/styles.css">
+<script src="/article-template/script.js" defer></script>
+</head>
+<body>
+<!-- ============ SITE HEADER ============ -->
+<header style="border-bottom: 1px solid #E6EBF2; background: #FFFFFF;">
+ <div class="wrap" style="height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+  <a href="/" style="display: flex; align-items: center; gap: 10px;" aria-label="Screenshot Extension home">
+   <span style="width: 40px; height: 40px; flex-shrink: 0; display: grid; place-items: center; border: 1px solid #001C3E; border-radius: 50%; box-sizing: border-box;"><img src="/article-template/assets/mascot.png" alt="" style="width: 28px; height: 25px; object-fit: contain; display: block;"></span>
+   <span class="hide-xs" style="font-weight: 600; font-size: 15px; line-height: 20px; color: #001C3E; white-space: nowrap;">Screenshot Extension</span>
+  </a>
+  <nav aria-label="Site" class="hide-sm" style="display:flex;align-items:center;gap:4px;"><a class="nav-link" href="/">Home</a><a class="nav-link" href="/blog/" aria-current="page" style="color:#0372F9;">Blog</a></nav>
+  <a class="btn-primary sm" href="https://chromewebstore.google.com/detail/screenshot-extension/mfinafjkbligcjbccappofiadgelfnbb?hl=en">
+   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+   Add to Chrome
+  </a>
+ </div>
+</header>
+
+<main><article>
+<!-- ============ TOP: HERO ============ -->
+<header style="padding: 40px 0 40px;">
+ <div class="wrap">
+  <div class="col" style="display: flex; flex-direction: column; gap: 20px;">
+
+   <nav aria-label="Breadcrumb"><ol style="margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:14px;line-height:20px;color:#626B79;"><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li><a href="/blog/">Blog</a></li><li aria-hidden="true">/</li><li aria-current="page">Full-page screenshots</li></ol></nav>
+
+   <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+    <span class="tag type"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0372F9" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>Guide</span>
+    <span class="tag cat">Capture</span>
+   </div>
+
+   <h1 id="article-title" class="h1" style="margin: 0; font-size: 48px; line-height: 56px; font-weight: 600; letter-spacing: -0.8px; color: #001C3E; text-wrap: balance;">How to take a full page screenshot in Chrome</h1>
+
+   <div style="margin:0;font-size:20px;line-height:30px;color:#626B79;"><p style="margin:0;">That gives you an image. Before sending it to a client or adding it to a ticket, check that the important content made it into the file—and that the recipient can read it.</p>
+</div>
+
+   <p class="meta" style="margin:0;">Published <time datetime="2026-10-29">October 29, 2026</time></p>
+
+   <!-- FIXED: the two hero actions (do not restyle, reorder or remove) -->
+   <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 4px;">
+    <a class="btn-primary" href="https://chromewebstore.google.com/detail/screenshot-extension/mfinafjkbligcjbccappofiadgelfnbb?hl=en">
+     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+     Add to Chrome
+    </a>
+    <a class="btn-quiet" href="#steps">
+     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0372F9" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
+     Jump to the steps
+    </a>
+   </div>
+
+   <!-- Share panel -->
+   <div role="group" aria-label="Share this article" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding-top: 16px; border-top: 1px solid #E6EBF2; margin-top: 8px;">
+    <span style="font-size: 13px; line-height: 16px; font-weight: 500; color: #626B79; margin-right: 4px;">Share</span>
+    <button class="btn-quiet sm" type="button" id="copy-link" style="margin-left: 4px;">
+     <svg class="ic-copy" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0372F9" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+     <svg class="ic-done" hidden width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0372F9" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
+     <span class="copy-label" aria-live="polite">Copy link</span>
+    </button>
+   </div>
+  </div>
+ </div>
+</header>
+
+<div class="wrap"><div class="col"><section aria-labelledby="quick-title" style="border:1px solid #E6EBF2;border-radius:12px;overflow:hidden;"><div class="prose" style="padding:24px;"><h2 id="quick-title" style="margin:0 0 12px;font-size:22px;line-height:28px;">Quick answer</h2><p>To take a full page screenshot in Chrome without an extension, open Developer Tools, open its Command Menu, type <strong>screenshot</strong>, and select <strong>Capture full size screenshot</strong>. Chrome saves the result as a PNG. This captures the web page beyond the visible window; you can find the command and its shortcuts in <a class="inline" href="https://developer.chrome.com/docs/devtools/command-menu">Chrome’s Command Menu documentation</a>.</p>
+</div><nav aria-labelledby="toc-title" style="background:#F5F8FE;border-top:1px solid #E6EBF2;padding:20px 16px 16px;"><h2 id="toc-title" style="margin:0 12px 8px;font-size:13px;line-height:16px;font-weight:500;color:#626B79;">In this article</h2><ol style="margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2px 8px;"><li><a class="toc-link" href="#choose-method"><span class="toc-n">1</span>Which full-page capture method should you use?</a></li><li><a class="toc-link" href="#steps"><span class="toc-n">2</span>How to take full page screenshot in Chrome without an extension</a></li><li><a class="toc-link" href="#okea"><span class="toc-n">3</span>How to capture and explain a page in Okea</a></li><li><a class="toc-link" href="#missing-content"><span class="toc-n">4</span>What if the screenshot misses part of the page?</a></li><li><a class="toc-link" href="#formats"><span class="toc-n">5</span>Should you save a PNG, JPEG or PDF?</a></li><li><a class="toc-link" href="#share-result"><span class="toc-n">6</span>Make the screenshot useful in a ticket or review</a></li><li><a class="toc-link" href="#faq"><span class="toc-n">7</span>Frequently asked questions</a></li></ol></nav></section></div></div>
+<div class="wrap" style="padding-bottom:64px;"><div class="col prose">
+<h2 id="choose-method">Which full-page capture method should you use?</h2>
+<p>Choose the method around the result you need:</p>
+<div class="tbl-box"><table class="tbl">
+<thead>
+<tr>
+<th>Your task</th>
+<th>Method</th>
+<th>Result</th>
+<th>What to watch for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Save a long page without installing anything</td>
+<td>Chrome Developer Tools</td>
+<td>A PNG screenshot</td>
+<td>Content that has not loaded may be missing</td>
+</tr>
+<tr>
+<td>Capture a page and explain a change on the image</td>
+<td>A screenshot tool with an editor, such as the Okea workflow below</td>
+<td>An annotated image or exported PDF</td>
+<td>Available controls depend on your version</td>
+</tr>
+<tr>
+<td>Save a page as a printable document</td>
+<td>Chrome’s Print → Save as PDF</td>
+<td>A PDF using the page’s print layout</td>
+<td>Layout, backgrounds and page breaks may differ from the screen</td>
+</tr>
+</tbody></table></div>
+<p>A full-page screenshot covers one page, including content below the fold. It does not visit links or capture every page on a website. For a competitor review with a homepage, pricing page and checkout, capture each page separately.</p>
+<h2 id="steps">How to take full page screenshot in Chrome without an extension</h2>
+<h3>Prepare the page you want to capture</h3>
+<p>Open the correct page and put it into the state you want to show: select the relevant tab, expand the needed sections, and close menus or overlays that obscure the content.</p>
+<p>Scroll down through the page and let images and sections load. Then return to the top. This can help with lazy-loaded content, which appears only when you approach it while scrolling. It does not guarantee that an endlessly updating feed or a large app table will become one complete image.</p>
+<p>Decide on a useful endpoint before capturing an infinite-scroll page. If the task concerns one result, chart or error message, a focused capture may be more useful than the entire page.</p>
+<h3>Run Chrome’s screenshot command</h3>
+<ol class="steps">
+<li><strong>Open Developer Tools.</strong> On Windows, press <strong>Ctrl + Shift + I</strong>. On Mac, press <strong>Command + Option + I</strong>. You can also open Chrome’s three-dot menu and choose <strong>More tools → Developer tools</strong>.</li>
+<li><strong>Open the Command Menu inside DevTools.</strong> On Windows, press <strong>Ctrl + Shift + P</strong>. On Mac, press <strong>Command + Shift + P</strong>. Make sure DevTools has focus first.</li>
+<li><strong>Type <code>screenshot</code>.</strong> The menu filters to the available screenshot commands.</li>
+<li><strong>Select <code>Capture full size screenshot</code>.</strong> Do not choose the shorter <strong>Capture screenshot</strong> command when you need content below the visible area.</li>
+<li><strong>Find the PNG.</strong> Check Chrome’s downloads list. The file usually goes to your configured download folder, often Downloads; Chrome may ask where to save it if you enabled that setting.</li>
+<li><strong>Open the saved image.</strong> Inspect the top, a section in the middle, and the bottom. Zoom in enough to read the text and check the detail that matters for your task.</li>
+</ol>
+<p>Chrome distinguishes full-size, visible-area and other screenshot options; its <a class="inline" href="https://developer.chrome.com/blog/devtools-tips-33">screenshot overview</a> illustrates the different capture types.</p>
+<p><strong>If the layout becomes narrower:</strong> docking Developer Tools beside the page reduces the space available to the website. Undock DevTools into a separate window, then check the page width before capturing. For a specific responsive layout, Chrome also provides viewport controls and full-size capture in <a class="inline" href="https://developer.chrome.com/docs/devtools/device-mode#screenshot">Device Mode</a>. You do not need to switch to a phone preset for a normal desktop screenshot.</p>
+<h2 id="okea">How to capture and explain a page in Okea</h2>
+<p>In the current Okea build, the <strong>Full Page → Editor</strong> workflow lets you capture, annotate and export in one place. These steps apply if your popup shows <strong>Full Page</strong>, <strong>Selected Area</strong> and <strong>Visible Area</strong>; that interface may differ from your installed version.</p>
+<ol class="steps">
+<li>Open the page you want to document and choose <strong>Full Page</strong> in Okea.</li>
+<li>When the capture opens in <strong>Editor</strong>, inspect the result before adding notes.</li>
+<li>Crop distracting content if needed. Add an arrow, a highlight or a short text note to identify the change you want.</li>
+<li>Choose <strong>Download</strong> to save the result. Use the format control to select PNG, JPEG or PDF. If you want to paste the image into another app, choose <strong>Copy</strong>, then paste it into the destination.</li>
+</ol>
+<p>Opening the Editor does not automatically download a file. Take the Download or Copy action when the result is ready.</p>
+<p><strong>If your popup instead shows “Capture as PNG” or “Capture as PDF”:</strong> that older workflow downloads directly rather than opening the Editor. Follow the controls you actually see.</p>
+<h3>Choose the smallest capture that explains the task</h3>
+<p>Use <strong>Full Page</strong> when the sequence or surrounding context matters, such as reviewing the order of sections on a landing page. Use <strong>Visible Area</strong> to show the current web-page viewport. Use <strong>Selected Area</strong> to draw a rectangle around a specific detail currently on screen.</p>
+<p>For an existing PNG or JPEG, <strong>Add image</strong> brings it into the Editor. You can also use numbered steps for a short visual instruction and return to earlier results through <strong>History</strong>, when those controls are available in your version.</p>
+<h2 id="missing-content">What if the screenshot misses part of the page?</h2>
+<p>A file can download successfully and still omit the thing you needed. Compare it with the page before treating it as a finished reference.</p>
+<h3>Images or the footer are missing</h3>
+<p>The page may load content as you scroll, or its height may change after the first view. Visit the missing section, wait until it appears, then capture again. Check the same section in the new file. If it is still absent, take a separate capture of that area rather than assuming another full-page attempt will include it.</p>
+<h3>Only one pane or part of a table appears</h3>
+<p>Some apps scroll inside a panel while the outer page stays still. A full-page capture does not necessarily expand that inner panel. Check which part of the app moves when you scroll. If the app offers an export or printable view, consider that; otherwise capture the needed panel in readable sections.</p>
+<p>Long tables can also render only the rows near the current view. Scrolling through every row may not leave all of them available for a single screenshot.</p>
+<h3>A header repeats, or the page is extremely long</h3>
+<p>Sticky navigation and floating controls can obstruct content or appear unexpectedly in the output. Close optional floating panels through the site’s normal controls and inspect another capture. If the problem remains, use smaller sections that preserve the relevant context.</p>
+<p>For feeds that keep loading, narrow the content with the site’s filters or choose a finite section. There may be no stable “bottom” to capture. A set of clearly labeled images is often easier to review than an enormous file with uncertain completeness.</p>
+<h2 id="formats">Should you save a PNG, JPEG or PDF?</h2>
+<p><strong>PNG</strong> is a useful starting point for interfaces, text and annotations because it avoids JPEG compression artifacts around letters and sharp edges. Chrome’s built-in full-size screenshot command produces a PNG.</p>
+<p><strong>JPEG</strong> may suit image-heavy pages when file size matters, but compression can soften text and introduce artifacts. Inspect the exported file at a readable size before choosing it for a detailed design review.</p>
+<p><strong>PDF</strong> is useful when the recipient wants a document attachment. Distinguish two routes: exporting a screenshot as PDF puts captured imagery into a document, while <strong>Print → Save as PDF</strong> asks Chrome to produce print output from the page. Neither route should be assumed to preserve interactive elements or provide searchable text in every case.</p>
+<p>To try the print route, close or leave DevTools, focus the page, and press <strong>Ctrl + P</strong> on Windows or <strong>Command + P</strong> on Mac. Choose <strong>Save as PDF</strong> as the destination and inspect the preview. Check page breaks, clipped content and backgrounds before saving. If your goal is to show exactly where an interface element appeared, start with a screenshot and verify that visual detail in the result.</p>
+<h2 id="share-result">Make the screenshot useful in a ticket or review</h2>
+<p>Suppose a landing page puts an important offer below several unrelated sections. Keep the full-page image as context, then make a focused crop showing the offer and the section above it. Add an arrow and a specific note such as “Move this offer above customer stories.” The recipient can see both the problem and the requested change.</p>
+<p>For a support instruction, mark the click target and number the steps in order. Avoid covering the button label with your annotation. Include the source URL in the ticket so a colleague can return to the live page.</p>
+<p>Finally, check the image after attaching or pasting it. A chat or ticket preview may shrink a tall screenshot until its text is unreadable. Attach the original file for detail and use a crop in the message for the immediate action. Inspect visible account details and other information before sending.</p>
+<h2 id="faq">Frequently asked questions</h2>
+<div class="faq">
+<details><summary><h3 style="margin:0;font:inherit;">How to take full page screenshot in Chrome on a Mac?</h3><svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="ans"><p>Open DevTools with <strong>Command + Option + I</strong>, then its Command Menu with <strong>Command + Shift + P</strong>. Type <strong>screenshot</strong> and select <strong>Capture full size screenshot</strong>. Find the resulting PNG in Chrome’s downloads list.</p></div></details>
+<details><summary><h3 style="margin:0;font:inherit;">Can I do this without installing anything?</h3><svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="ans"><p>Yes. Chrome’s built-in Developer Tools provides the full-size screenshot command. An extension is an option when you also want editing or a different capture workflow.</p></div></details>
+<details><summary><h3 style="margin:0;font:inherit;">Is a full-page screenshot the entire website?</h3><svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="ans"><p>No. It captures one web page, subject to how that page loads and displays content. It does not follow links, capture other tabs or include the rest of the site.</p></div></details>
+<details><summary><h3 style="margin:0;font:inherit;">Does the same method work on mobile?</h3><svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="ans"><p>These keyboard steps are for desktop Chrome on Windows or Mac. A phone’s screenshot and scrolling-capture options depend on its operating system and app. Desktop Device Mode previews a responsive layout; it is not the same as taking a screenshot on a physical phone.</p></div></details>
+<details><summary><h3 style="margin:0;font:inherit;">Where did Chrome save the file?</h3><svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="ans"><p>Open Chrome’s downloads list to locate the PNG. Its location follows your download settings; it may be in Downloads or in a folder you selected when prompted.</p></div></details>
+<details><summary><h3 style="margin:0;font:inherit;">Why does my screenshot capture only the visible window?</h3><svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary><div class="ans"><p>First check the command: <strong>Capture full size screenshot</strong> is the full-page option. A normal system screenshot or the <strong>Capture screenshot</strong> command captures a different scope. If you selected the correct command, check whether the missing content is inside its own scrollable panel or has not loaded yet.</p></div></details>
+</div>
+
+</div></div>
+</article></main>
+<footer style="border-top:1px solid #E6EBF2;background:#F5F8FE;"><div class="wrap" style="min-height:64px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding-top:16px;padding-bottom:16px;"><span style="font-size:14px;line-height:20px;color:#626B79;">© 2026 Screenshot Extension</span><nav aria-label="Footer" style="display:flex;gap:4px;"><a class="nav-link" href="/">Home</a><a class="nav-link" href="/blog/">Blog</a></nav></div></footer>
+</body></html>
