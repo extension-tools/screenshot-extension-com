@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow, noimageindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to annotate a screenshot in Chrome — Screenshot Extension</title>
+<meta name="description" content="Add arrows, boxes, text and step numbers to any web page or image, hide private details, then copy, download or print the result.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<div style="width: 100%; background: #FFFFFF;">
+
+<!-- ============ SITE HEADER ============ -->
+<header style="border-bottom: 1px solid #E6EBF2; background: #FFFFFF;">
+ <div class="wrap" style="height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 16px;">
+  <a href="#" style="display: flex; align-items: center; gap: 10px;" aria-label="Screenshot Extension home">
+   <span style="width: 40px; height: 40px; flex-shrink: 0; display: grid; place-items: center; border: 1px solid #001C3E; border-radius: 50%; box-sizing: border-box;"><img src="assets/mascot.png" alt="" style="width: 28px; height: 25px; object-fit: contain; display: block;"></span>
+   <span class="hide-xs" style="font-weight: 600; font-size: 15px; line-height: 20px; color: #001C3E; white-space: nowrap;">Screenshot Extension</span>
+  </a>
+  <nav aria-label="Site" class="hide-sm" style="display: flex; align-items: center; gap: 4px;">
+   <a class="nav-link" href="#">Features</a>
+   <a class="nav-link" href="#" aria-current="page" style="color: #0372F9;">Blog</a>
+   <a class="nav-link" href="#">Help</a>
+  </nav>
+  <a class="btn-primary sm" href="https://chromewebstore.google.com/detail/screenshot-extension/mfinafjkbligcjbccappofiadgelfnbb?hl=en">
+   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+   Add to Chrome
+  </a>
+ </div>
+</header>
+
+<main>
+<article>
+
+<!-- ============ TOP: HERO ============ -->
+<header style="padding: 40px 0 40px;">
+ <div class="wrap">
+  <div class="col" style="display: flex; flex-direction: column; gap: 20px;">
+
+   <nav aria-label="Breadcrumb">
+    <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 14px; line-height: 20px; font-weight: 500; color: #626B79;">
+     <li><a href="#" style="color: #626B79;">Home</a></li>
+     <li aria-hidden="true" style="display: flex;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#94A0B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg></li>
+     <li><a href="#" style="color: #626B79;">Blog</a></li>
+     <li aria-hidden="true" style="display: flex;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#94A0B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg></li>
+     <li><a href="#" style="color: #626B79;">Annotation</a></li>
+    </ol>
+   </nav>
+
+   <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+    <span class="tag type"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0372F9" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>Guide</span>
+    <a class="tag cat" href="#">Annotation</a>
+   </div>
+
+   <h1 id="article-title" class="h1" style="margin: 0; font-size: 48px; line-height: 56px; font-weight: 600; letter-spacing: -0.8px; color: #001C3E; text-wrap: balance;">How to annotate a screenshot in Chrome</h1>
+
+   <p style="margin: 0; font-size: 20px; line-height: 30px; font-weight: 400; color: #626B79;">Add arrows, boxes, text and step numbers to any web page or image, hide private details, then copy, download or print the result.</p>
+
+   <div style="display: flex; align-items: center; gap: 12px; padding-top: 4px;">
+    <div aria-hidden="true" style="width: 48px; height: 48px; flex-shrink: 0; border-radius: 50%; background: #EEF5FF; border: 1px solid #E6EBF2; box-sizing: border-box; display: grid; place-items: center; color: #626B79; font-size: 11px; line-height: 14px; font-weight: 500;">Photo</div>
+    <div style="display: flex; flex-direction: column;">
+     <a href="#" style="font-size: 15px; line-height: 20px; font-weight: 600;">[First name Last name]</a>
+     <span class="meta">[Role, e.g. Product designer, Screenshot Extension]</span>
+     <span class="meta" style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px;"><span>Updated <time datetime="2026-10-28">[Month D, YYYY]</time></span><span aria-hidden="true">·</span><span>[N] min read</span></span>
+    </div>
+   </div>
+
+   <!-- FIXED: the two hero actions (do not restyle, reorder or remove) -->
+   <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 4px;">
+    <a class="btn-primary" href="https://chromewebstore.google.com/detail/screenshot-extension/mfinafjkbligcjbccappofiadgelfnbb?hl=en">
+     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+     Add to Chrome
+    </a>
+    <a class="btn-quiet" href="#steps">
+     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0372F9" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
+     Jump to the steps
+    </a>
+   </div>
+
+   <!-- Share panel -->
+   <div role="group" aria-label="Share this article" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding-top: 16px; border-top: 1px solid #E6EBF2; margin-top: 8px;">
+    <span style="font-size: 13px; line-height: 16px; font-weight: 500; color: #626B79; margin-right: 4px;">Share</span>
+    <a class="share-btn" href="#" aria-label="Share on WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.65-4.8A9 9 0 1 1 7.8 19.4z"></path><path d="M9 9.5c.3 2.6 2.4 4.8 5 5.1l1.2-1.3-2-1-1 .8a4 4 0 0 1-1.9-1.9l.8-1-1-2z"></path></svg></a>
+    <a class="share-btn" href="#" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M8 11v6"></path><path d="M8 7.5v.01"></path><path d="M12 17v-6"></path><path d="M12 13.5a2.5 2.5 0 0 1 5 0V17"></path></svg></a>
+    <a class="share-btn" href="#" aria-label="Share on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+    <a class="share-btn" href="#" aria-label="Share on X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16"></path><path d="M20 4L4 20"></path></svg></a>
+    <a class="share-btn" href="#" aria-label="Share on Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"></path><path d="M22 2 11 13"></path></svg></a>
+    <a class="share-btn" href="#" aria-label="Share on Reddit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="14.5" rx="8" ry="5.5"></ellipse><path d="M12 9l1.2-5 4.3 1"></path><circle cx="18.5" cy="5" r="1.5"></circle><path d="M9 16.5c1.8 1 4.2 1 6 0"></path><path d="M9 13.5v.01"></path><path d="M15 13.5v.01"></path></svg></a>
+    <button class="btn-quiet sm" type="button" id="copy-link" style="margin-left: 4px;">
+     <svg class="ic-copy" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0372F9" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+     <svg class="ic-done" hidden width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0372F9" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
+     <span class="copy-label" aria-live="polite">Copy link</span>
+    </button>
+   </div>
+  </div>
+ </div>
+</header>
+
+<!-- Large image under H1 -->
+<div class="wrap" style="padding-bottom: 40px;">
+ <figure class="wide" style="margin: 0 auto;">
+  <div style="border: 1px solid #E6EBF2; border-radius: 12px; overflow: hidden; background: #FFFFFF; box-shadow: 0 18px 46px rgba(3,32,72,.10);">
+   <svg viewBox="0 0 1120 600" style="display: block; width: 100%; height: auto;" role="img" aria-label="The Screenshot Extension editor with a web page annotated: an orange box around a button, an arrow, a text note, three step numbers and a blurred email address" font-family="Inter, system-ui, sans-serif">
+    <rect width="1120" height="600" fill="#FFFFFF"></rect>
+    <circle cx="44" cy="32" r="19.5" fill="#FFFFFF" stroke="#001C3E"></circle>
+    <image href="assets/mascot.png" x="30" y="19.5" width="28" height="25"></image>
+    <text x="74" y="37" font-size="15" font-weight="600" fill="#001C3E">Screenshot Extension</text>
+    <text x="268" y="37" font-size="15" font-weight="500" fill="#001C3E">Copy</text>
+    <rect x="318" y="14" width="64" height="36" rx="8" fill="#DCEAFE"></rect>
+    <text x="336" y="37" font-size="15" font-weight="500" fill="#0372F9">Edit</text>
+    <text x="398" y="37" font-size="15" font-weight="500" fill="#001C3E">Crop</text>
+    <rect x="464" y="14" width="96" height="36" rx="8" fill="#F3F5F8"></rect>
+    <text x="512" y="37" font-size="15" font-weight="500" fill="#001C3E" text-anchor="middle">100%</text>
+    <text x="584" y="37" font-size="15" font-weight="500" fill="#001C3E">Add image</text>
+    <rect x="944" y="14" width="136" height="36" rx="8" fill="#0262D6"></rect>
+    <text x="1012" y="37" font-size="15" font-weight="500" fill="#FFFFFF" text-anchor="middle">Download</text>
+    <rect y="63" width="1120" height="1" fill="#E6EBF2"></rect>
+    <rect x="26" y="68" width="36" height="36" rx="8" fill="#DCEAFE"></rect>
+    <rect x="35" y="77" width="18" height="18" rx="2" fill="none" stroke="#0372F9" stroke-width="1.75"></rect>
+    <path d="M78 80h18M87 80v16M84 96h6" stroke="#001C3E" stroke-width="1.75" stroke-linecap="round" fill="none"></path>
+    <path d="M114 96l14-14M118 82h10v10" stroke="#001C3E" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+    <circle cx="165" cy="86" r="9" fill="none" stroke="#001C3E" stroke-width="1.75"></circle>
+    <text x="165" y="90.5" font-size="11" font-weight="600" fill="#001C3E" text-anchor="middle">1</text>
+    <rect x="198" y="74" width="1" height="24" fill="#E6EBF2"></rect>
+    <circle cx="232" cy="86" r="9" fill="#F5A623" stroke="rgba(0,28,62,.14)"></circle>
+    <rect x="262" y="84" width="128" height="4" rx="2" fill="#E6EBF2"></rect>
+    <rect x="262" y="84" width="40" height="4" rx="2" fill="#F5A623"></rect>
+    <circle cx="302" cy="86" r="8" fill="#FFFFFF" stroke="#F5A623" stroke-width="2"></circle>
+    <rect x="404" y="72" width="44" height="28" rx="6" fill="#FFFFFF" stroke="#E6EBF2"></rect>
+    <text x="426" y="91" font-size="14" font-weight="500" fill="#001C3E" text-anchor="middle">4</text>
+    <rect y="107" width="1120" height="1" fill="#E6EBF2"></rect>
+    <rect y="108" width="1120" height="492" fill="#F3F3F3"></rect>
+    <rect x="200" y="136" width="720" height="440" fill="#FFFFFF" stroke="#E1E4E9"></rect>
+    <rect x="232" y="160" width="96" height="14" rx="3" fill="#001C3E" opacity=".85"></rect>
+    <rect x="724" y="160" width="56" height="10" rx="3" fill="#C9D1DC"></rect>
+    <rect x="796" y="160" width="56" height="10" rx="3" fill="#C9D1DC"></rect>
+    <rect x="232" y="214" width="380" height="22" rx="4" fill="#001C3E" opacity=".85"></rect>
+    <rect x="232" y="248" width="300" height="22" rx="4" fill="#001C3E" opacity=".85"></rect>
+    <rect x="232" y="292" width="420" height="10" rx="3" fill="#C9D1DC"></rect>
+    <rect x="232" y="312" width="380" height="10" rx="3" fill="#C9D1DC"></rect>
+    <rect x="232" y="352" width="260" height="40" rx="6" fill="#FFFFFF" stroke="#C9D1DC"></rect>
+    <text x="248" y="377" font-size="14" fill="#5F6B7A">Email address</text>
+    <rect x="504" y="352" width="116" height="40" rx="6" fill="#3B4A60"></rect>
+    <text x="562" y="377" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Sign up</text>
+    <rect x="232" y="432" width="200" height="110" rx="8" fill="#EEF1F5"></rect>
+    <rect x="448" y="432" width="200" height="110" rx="8" fill="#EEF1F5"></rect>
+    <rect x="664" y="432" width="224" height="110" rx="8" fill="#EEF1F5"></rect>
+    <rect x="700" y="214" width="188" height="180" rx="8" fill="#EEF1F5"></rect>
+    <rect x="232" y="410" width="250" height="12" rx="3" fill="#B7C0CC"></rect>
+    <rect x="228" y="404" width="262" height="24" rx="4" fill="#C9D1DC" opacity=".95"></rect>
+    <path d="M236 416h14M256 416h20M282 416h12M300 416h28M334 416h10M352 416h30M390 416h22M420 416h16M444 416h36" stroke="#AEB8C5" stroke-width="7" stroke-linecap="round"></path>
+    <rect x="494" y="342" width="136" height="60" rx="4" fill="none" stroke="#F5A623" stroke-width="3"></rect>
+    <path d="M700 300 L640 352" stroke="#F5A623" stroke-width="3" stroke-linecap="round" fill="none"></path>
+    <path d="M641 338 L638 354 L653 349" stroke="#F5A623" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+    <rect x="660" y="262" width="236" height="40" rx="6" fill="#FFFFFF" opacity=".92"></rect>
+    <text x="672" y="288" font-size="17" font-weight="600" fill="#C2410C">Make the button bigger</text>
+    <circle cx="216" cy="225" r="13" fill="#F5A623"></circle>
+    <text x="216" y="230" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+    <circle cx="216" cy="372" r="13" fill="#F5A623"></circle>
+    <text x="216" y="377" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+    <circle cx="216" cy="487" r="13" fill="#F5A623"></circle>
+    <text x="216" y="492" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+   </svg>
+  </div>
+  <figcaption class="fig-cap">An annotated page in the editor: a box and an arrow point at the button, a text note explains the change, step numbers set the order, and Blur hides the email address.</figcaption>
+ </figure>
+</div>
+
+<!-- Intro + Quick answer + Contents -->
+<div class="wrap">
+ <div class="col">
+  <div class="prose">
+   <p>A plain screenshot shows what is on the screen. An annotated one shows what matters: the button to fix, the field to fill in, the step to take next. In this guide you will capture a page in Chrome, mark it up with arrows, boxes, text and step numbers, hide private details, and save the result as PNG, JPEG or PDF.</p>
+   <p>You can do all of it in the extension, or start right here on this page with an image you already have.</p>
+  </div>
+
+  <section id="steps" aria-labelledby="quick-title" style="margin-top: 32px; border: 1px solid #E6EBF2; border-radius: 12px; overflow: hidden;">
+   <div style="padding: 28px; display: flex; flex-direction: column; gap: 16px;">
+    <div style="display: flex; align-items: center; gap: 12px;">
+     <span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></span>
+     <h2 id="quick-title" style="margin: 0; font-size: 22px; line-height: 28px; font-weight: 600;">Quick answer</h2>
+    </div>
+    <ol class="steps" style="margin: 0; font-size: 16px; line-height: 24px;">
+     <li><b>Add Screenshot Extension to Chrome</b> and pin it to the toolbar.</li>
+     <li><b>Open the page and choose Full Page, Selected Area or Visible Area.</b> The capture opens in the editor.</li>
+     <li><b>Pick a tool and draw:</b> Rectangle, Arrow, Text, Step numbers, Blur or Draw.</li>
+     <li><b>Click Download</b> for PDF, PNG or JPEG, or <b>Copy</b> to paste the image anywhere.</li>
+    </ol>
+   </div>
+   <nav aria-labelledby="toc-title" style="background: #F5F8FE; border-top: 1px solid #E6EBF2; padding: 20px 16px 16px;">
+    <h2 id="toc-title" style="margin: 0 12px 8px; font-size: 13px; line-height: 16px; font-weight: 500; color: #626B79;">In this article</h2>
+    <ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2px 8px;">
+     <li><a class="toc-link" href="#in-extension"><span class="toc-n">1</span>Annotate a page in the extension</a></li>
+     <li><a class="toc-link" href="#on-site"><span class="toc-n">2</span>Annotate an image from this page</a></li>
+     <li><a class="toc-link" href="#tools"><span class="toc-n">3</span>Annotation tools at a glance</a></li>
+     <li><a class="toc-link" href="#settings"><span class="toc-n">4</span>Color, size, position and thickness</a></li>
+     <li><a class="toc-link" href="#more"><span class="toc-n">5</span>Notes, shapes and step numbers</a></li>
+     <li><a class="toc-link" href="#save"><span class="toc-n">6</span>Copy, download or save</a></li>
+     <li><a class="toc-link" href="#print"><span class="toc-n">7</span>Print with annotations</a></li>
+     <li><a class="toc-link" href="#pdf"><span class="toc-n">8</span>Scanned PDFs and text you can’t select</a></li>
+     <li><a class="toc-link" href="#problems"><span class="toc-n">9</span>Common problems and fixes</a></li>
+     <li><a class="toc-link" href="#faq"><span class="toc-n">10</span>FAQ</a></li>
+    </ol>
+   </nav>
+  </section>
+ </div>
+</div>
+
+<!-- ============ MAIN CONTENT ============ -->
+<div class="wrap" style="padding-bottom: 32px;">
+ <div class="col prose">
+
+  <h2 id="in-extension">Annotate a page in the extension</h2>
+  <p>The extension captures the page and opens it in its own editor, so you never switch to another app. Three steps take about a minute.</p>
+
+  <h3>Step 1. Capture the page</h3>
+  <ol class="steps">
+   <li>Click the Screenshot Extension icon in the Chrome toolbar.<span class="result">The popup opens with three capture options.</span></li>
+   <li>Choose <b>Full Page</b> for the whole page, <b>Selected Area</b> to drag a frame, or <b>Visible Area</b> for what is on the screen.<span class="result">Full Page shows its progress while it scrolls; the other two capture at once.</span></li>
+   <li>Wait for the editor tab to open.<span class="result">Your capture is in the middle, with the editing tools above it.</span></li>
+  </ol>
+
+  <h3>Step 2. Mark what matters</h3>
+  <ol class="steps">
+   <li>Click <b>Rectangle</b> and drag around the part you want people to look at.<span class="result">An orange box appears. Orange is the default color.</span></li>
+   <li>Click <b>Arrow</b> and drag from empty space toward that part.<span class="result">The arrow points from where you started to where you let go.</span></li>
+   <li>Click <b>Text</b>, click on the image and type a short note.<span class="result">The note stays where you clicked; you can move it later with Select.</span></li>
+  </ol>
+
+  <figure style="margin: 8px 0 28px;">
+   <div style="position: relative; border: 1px solid #E6EBF2; border-radius: 12px; overflow: hidden; background: #F3F3F3;">
+    <svg viewBox="0 0 760 360" style="display: block; width: 100%; height: auto;" role="img" aria-label="Animation: a box is drawn around a button, then an arrow and a text note are added" font-family="Inter, system-ui, sans-serif">
+     <rect width="760" height="360" fill="#F3F3F3"></rect>
+     <rect x="80" y="28" width="600" height="304" fill="#FFFFFF" stroke="#E1E4E9"></rect>
+     <rect x="112" y="60" width="240" height="18" rx="4" fill="#001C3E" opacity=".85"></rect>
+     <rect x="112" y="96" width="320" height="9" rx="3" fill="#C9D1DC"></rect>
+     <rect x="112" y="114" width="280" height="9" rx="3" fill="#C9D1DC"></rect>
+     <rect x="112" y="150" width="200" height="36" rx="6" fill="#FFFFFF" stroke="#C9D1DC"></rect>
+     <rect x="322" y="150" width="100" height="36" rx="6" fill="#3B4A60"></rect>
+     <text x="372" y="173" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Sign up</text>
+     <rect x="112" y="214" width="168" height="90" rx="8" fill="#EEF1F5"></rect>
+     <rect x="296" y="214" width="168" height="90" rx="8" fill="#EEF1F5"></rect>
+     <rect x="480" y="60" width="168" height="244" rx="8" fill="#EEF1F5"></rect>
+     <rect class="demo-rect" x="312" y="141" width="120" height="54" rx="4" fill="none" stroke="#F5A623" stroke-width="3"></rect>
+     <path class="demo-arrow" d="M560 112 L446 196" stroke="#F5A623" stroke-width="3" stroke-linecap="round" fill="none"></path>
+     <g class="demo-label"><rect x="494" y="84" width="176" height="32" rx="6" fill="#FFFFFF"></rect><text x="504" y="105" font-size="15" font-weight="600" fill="#C2410C">Make it bigger</text></g>
+     <g class="demo-cursor"><path d="M0 0 L0 17 L5 13 L8 20 L11 19 L8 12 L14 12 Z" fill="#001C3E" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"></path></g>
+    </svg>
+    <span style="position: absolute; left: 12px; top: 12px; display: inline-flex; align-items: center; height: 24px; padding: 0 8px; border-radius: 6px; background: rgba(0,28,62,.72); color: #FFFFFF; font-size: 12px; line-height: 16px; font-weight: 600;">GIF</span>
+   </div>
+   <figcaption class="fig-cap">Draw a box, add an arrow, type a note: the whole markup takes a few seconds. [Replace with the recorded GIF, 760 × 360, under 2 MB.]</figcaption>
+  </figure>
+
+  <h3>Step 3. Hide private details</h3>
+  <p>Before you share, cover names, emails and numbers. Choose <b>Blur</b> and drag over the area. Blur is drawn into the image when you download it, so the original text can’t be recovered from the file.</p>
+
+  <a class="callout" href="#settings">
+   <span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></span>
+   <span style="display: flex; flex-direction: column; gap: 4px;">
+    <span style="font-weight: 600; font-size: 16px; line-height: 24px;">Tip: pick the color before you draw</span>
+    <span style="font-size: 15px; line-height: 22px; color: #626B79;">Choose the color and thickness first, and every new arrow and box will use them. See how to change them below.</span>
+   </span>
+   <svg class="go" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+  </a>
+
+  <h2 id="on-site">Annotate an image from this page</h2>
+  <p>Already have a screenshot or a photo on your computer? Drop it here. It opens in the same editor with the <a class="inline" href="#">Add image</a> option, so you can mark it up without taking a new capture.</p>
+
+  <div style="margin: 0 0 12px;">
+   <label class="drop" id="drop">
+    <input class="sr" type="file" id="drop-input" accept="image/png,image/jpeg">
+    <span class="tile" style="width: 48px; height: 48px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m17 8-5-5-5 5"></path><path d="M12 3v12"></path></svg></span>
+    <span class="drop-idle">
+     <span class="drop-title" style="display: block; font-weight: 600; font-size: 17px; line-height: 24px;">Drop an image to annotate it</span>
+     <span style="font-size: 14px; line-height: 20px; color: #626B79;">PNG or JPEG · or <span style="color: #0262D6; text-decoration: underline; text-underline-offset: 3px;">choose a file</span></span>
+    </span>
+    <span class="drop-done" hidden>
+     <span class="drop-file" style="display: block; font-weight: 600; font-size: 17px; line-height: 24px;"></span>
+     <span style="font-size: 14px; line-height: 20px; color: #626B79;">Ready to open in the editor</span>
+    </span>
+   </label>
+  </div>
+  <div id="drop-actions" hidden>
+   <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 0 0 20px;">
+    <a class="btn-quiet sm" href="#">Open in the editor</a>
+    <span style="font-size: 14px; line-height: 20px; color: #626B79;">Needs Screenshot Extension. <a class="inline" href="https://chromewebstore.google.com/detail/screenshot-extension/mfinafjkbligcjbccappofiadgelfnbb?hl=en">Add to Chrome</a></span>
+   </div>
+  </div>
+  <p style="font-size: 15px; line-height: 22px; color: #626B79;">The file stays on your computer: it opens in the extension in your browser.</p>
+
+  <h2 id="tools">Annotation tools at a glance</h2>
+  <p>Each tool does one job. Pick the one that matches what you want the reader to notice.</p>
+  <div class="tbl-box">
+   <table class="tbl">
+    <thead><tr><th scope="col">Tool</th><th scope="col">What it does</th><th scope="col">Use it for</th></tr></thead>
+    <tbody>
+     <tr><td>Rectangle</td><td>Draws a box with an outline</td><td>Framing a button, field or block</td></tr>
+     <tr><td>Arrow / Line</td><td>Draws an arrow or a straight line</td><td>Pointing at a detail from empty space</td></tr>
+     <tr><td>Text</td><td>Adds a note you type</td><td>Explaining what to change and why</td></tr>
+     <tr><td>Step numbers</td><td>Places numbered circles in order</td><td>Instructions with several steps</td></tr>
+     <tr><td>Blur</td><td>Hides the area under it</td><td>Emails, names, prices, tokens</td></tr>
+     <tr><td>Draw</td><td>Freehand line</td><td>Circling something quickly</td></tr>
+     <tr><td>Select</td><td>Picks an annotation to move, resize or delete</td><td>Fixing what you have drawn</td></tr>
+     <tr><td>Eraser</td><td>Removes one annotation</td><td>Undoing a single mark</td></tr>
+    </tbody>
+   </table>
+  </div>
+
+  <h3>Where annotated screenshots help most</h3>
+  <ul>
+   <li><b>Bug reports.</b> A box around the broken element and one line of text save a long description.</li>
+   <li><b>Design feedback.</b> Arrows and notes on the live page show exactly which spacing or color to change.</li>
+   <li><b>How-to guides.</b> Step numbers turn one screenshot into a short instruction.</li>
+   <li><b>Sharing data safely.</b> Blur hides personal details before the image leaves your computer.</li>
+  </ul>
+
+  <h2 id="settings">Change color, size, position and thickness</h2>
+  <p>Every arrow, box, line and note can be changed after you draw it. Click <b>Select</b>, click the annotation, then use the controls in the second row of the toolbar.</p>
+  <div class="tbl-box">
+   <table class="tbl">
+    <thead><tr><th scope="col">Setting</th><th scope="col">How to change it</th><th scope="col">Good to know</th></tr></thead>
+    <tbody>
+     <tr><td>Color</td><td>Click the color circle and pick one of six colors</td><td>Orange, red, green, blue, violet, navy. Orange is the default</td></tr>
+     <tr><td>Thickness</td><td>Move the stroke slider or type a value next to it</td><td>Thicker lines read better on large, full-page captures</td></tr>
+     <tr><td>Size</td><td>Drag a corner handle of the selected annotation</td><td>Boxes, arrows and blur areas resize the same way</td></tr>
+     <tr><td>Position</td><td>Drag the selected annotation with Select</td><td>Use Undo if it lands in the wrong place</td></tr>
+     <tr><td>Transparency</td><td>Not available as a setting</td><td>To soften a part of the image, use Blur; to frame it, use Rectangle</td></tr>
+    </tbody>
+   </table>
+  </div>
+
+  <h3>Change the color of an arrow you already drew</h3>
+  <ol class="steps">
+   <li>Click <b>Select</b> in the second toolbar row, then click the arrow.<span class="result">Handles appear at both ends of the arrow.</span></li>
+   <li>Click the color circle and pick a new color.<span class="result">The arrow changes at once; new annotations use this color too.</span></li>
+   <li>Move the stroke slider to make the line thicker or thinner.<span class="result">The number next to the slider shows the exact value.</span></li>
+  </ol>
+
+  <h2 id="more">Text notes, shapes and step numbers</h2>
+  <p>Beyond arrows and boxes, three tools help you explain more on one image.</p>
+  <h3>Text notes as comments</h3>
+  <p>Use <b>Text</b> to leave a comment right next to the thing it describes. Keep notes short: one action per note, like “Move this up” or “Use the brand blue”.</p>
+  <h3>Shapes</h3>
+  <p><b>Rectangle</b> frames an area, <b>Arrow / Line</b> points or underlines, and <b>Draw</b> lets you circle something by hand. Mix them: a box to frame, an arrow to point, a note to explain.</p>
+  <h3>Step numbers</h3>
+  <p>Click <b>Step numbers</b>, then click each place in order. The circles count up on their own (1, 2, 3), so the reader follows the steps without reading a word.</p>
+
+  <!-- Promo card: text + image + button -->
+  <aside aria-label="Screenshot Extension" style="margin: 36px 0; border: 1px solid #E6EBF2; border-radius: 12px; overflow: hidden; background: #F5F8FE; display: flex; flex-wrap: wrap; align-items: center;">
+   <div style="flex: 999 1 320px; min-width: 0; padding: 28px; display: flex; flex-direction: column; gap: 12px; align-items: flex-start;">
+    <span style="font-size: 13px; line-height: 16px; font-weight: 500; color: #626B79;">Screenshot Extension for Chrome</span>
+    <span style="font-size: 22px; line-height: 28px; font-weight: 600; color: #001C3E;">Capture, mark up and share in one place</span>
+    <span style="font-size: 15px; line-height: 22px; color: #626B79;">Full page, selected area or visible area. Arrows, text, step numbers and blur. PDF, PNG or JPEG.</span>
+    <a class="btn-primary" href="https://chromewebstore.google.com/detail/screenshot-extension/mfinafjkbligcjbccappofiadgelfnbb?hl=en" style="margin-top: 4px;">
+     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+     Add to Chrome
+    </a>
+   </div>
+   <div style="flex: 1 1 260px; padding: 28px; display: grid; place-items: center;">
+    <div role="img" aria-label="The Screenshot Extension popup" style="width: 240px; background: #FFFFFF; box-shadow: 0 18px 46px rgba(3,32,72,.14); font-size: 13px;">
+     <div style="display: flex; align-items: center; gap: 8px; padding: 10px 14px;">
+      <span style="width: 32px; height: 32px; display: grid; place-items: center; border: 1px solid #001C3E; border-radius: 50%; box-sizing: border-box;"><img src="assets/mascot.png" alt="" style="width: 24px; height: 21px; object-fit: contain; display: block;"></span>
+      <span style="font-weight: 600; font-size: 13px; line-height: 16px;">Screenshot Extension</span>
+     </div>
+     <div style="display: flex; flex-direction: column; gap: 6px; padding: 0 12px 12px;">
+      <div style="display: flex; align-items: center; gap: 10px; height: 40px; padding: 0 10px; background: #EEF5FF; border: 1px solid rgba(3,114,249,.4); border-radius: 8px; box-sizing: border-box; font-weight: 500;"><span style="width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; background: #FFFFFF; color: #0372F9;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 12h-5"></path><path d="M15 8h-5"></path><path d="M19 17V5a2 2 0 0 0-2-2H4"></path><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"></path></svg></span>Full Page</div>
+      <div style="display: flex; align-items: center; gap: 10px; height: 40px; padding: 0 10px; border: 1px solid #E6EBF2; border-radius: 8px; box-sizing: border-box; font-weight: 500;"><span style="width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; background: #EEF5FF; color: #0372F9;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3a2 2 0 0 0-2 2"></path><path d="M19 3a2 2 0 0 1 2 2"></path><path d="M5 21a2 2 0 0 1-2-2"></path><path d="M9 3h1"></path><path d="M14 3h1"></path><path d="M3 9v1"></path><path d="M21 9v2"></path><path d="M12.034 12.681a.498.498 0 0 1 .647-.647l9 3.5a.5.5 0 0 1-.033.943l-3.444 1.068a1 1 0 0 0-.66.66l-1.067 3.443a.5.5 0 0 1-.943.033z"></path></svg></span>Selected Area</div>
+      <div style="display: flex; align-items: center; gap: 10px; height: 40px; padding: 0 10px; border: 1px solid #E6EBF2; border-radius: 8px; box-sizing: border-box; font-weight: 500;"><span style="width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; background: #EEF5FF; color: #0372F9;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"></rect><path d="M8 21h8"></path><path d="M12 17v4"></path></svg></span>Visible Area</div>
+     </div>
+    </div>
+   </div>
+  </aside>
+
+  <h2 id="save">Copy, download or save the result</h2>
+  <p>When the image is ready, choose how it leaves the editor. The <b>Download</b> button remembers the format you picked last time.</p>
+  <div class="tbl-box">
+   <table class="tbl">
+    <thead><tr><th scope="col">Option</th><th scope="col">What you get</th><th scope="col">Best for</th></tr></thead>
+    <tbody>
+     <tr><td>Download PDF</td><td>A PDF file with the annotated image</td><td>Sending to clients, printing, archiving</td></tr>
+     <tr><td>Download PNG</td><td>A sharp image without quality loss</td><td>Interfaces, text, bug reports</td></tr>
+     <tr><td>Download JPEG</td><td>A smaller image file</td><td>Photos and long pages sent by email</td></tr>
+     <tr><td>Copy</td><td>The image on the clipboard</td><td>Pasting into Slack, Docs, Jira or an email</td></tr>
+     <tr><td>History</td><td>Your earlier screenshots in one list</td><td>Finding a capture you made before</td></tr>
+    </tbody>
+   </table>
+  </div>
+  <ol class="steps">
+   <li>Click the arrow next to <b>Download</b> and pick PDF, PNG or JPEG.<span class="result">The button now shows the format you chose.</span></li>
+   <li>Click <b>Download</b>.<span class="result">The file goes to your Downloads folder with a readable name based on the page.</span></li>
+  </ol>
+
+  <div class="note" role="note">
+   <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+    <span class="tile" style="background: #FFFFFF;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg></span>
+    <span style="font-weight: 600; font-size: 17px; line-height: 24px;">Save before you close the editor</span>
+   </div>
+   <p style="margin: 0; font-size: 16px; line-height: 26px;">The editor doesn’t autosave annotations. If you close it with unsaved edits, it asks “Discard unsaved edits?”. Choose <b>Keep editing</b>, then download or copy the image.</p>
+  </div>
+
+  <h2 id="print">Print a screenshot with annotations</h2>
+  <p>Annotations print exactly as you see them, because they are part of the image.</p>
+  <ol class="steps">
+   <li>In the editor, choose <b>PDF</b> in the Download menu and click <b>Download</b>.<span class="result">You get a PDF with the image and every annotation on it.</span></li>
+   <li>Open the PDF from your Downloads folder in Chrome.<span class="result">It opens in Chrome’s PDF viewer.</span></li>
+   <li>Press <span class="kbd">Ctrl</span> + <span class="kbd">P</span> (<span class="kbd">⌘</span> + <span class="kbd">P</span> on a Mac) and choose your printer.<span class="result">For a long page, pick “Fit to page” or a larger paper size so the text stays readable.</span></li>
+  </ol>
+
+  <h2 id="pdf">Scanned PDFs and text you can’t select</h2>
+  <p>A scanned PDF is a picture of a page. Its text looks like text but can’t be selected, searched or edited. A screenshot works the same way: it is an image too.</p>
+  <ul>
+   <li><b>To mark up a scan,</b> open the PDF in Chrome, capture the page with <b>Visible Area</b> and annotate it like any other screenshot.</li>
+   <li><b>To fix wrong text,</b> cover it with <b>Blur</b> or a <b>Rectangle</b> and type the correct text on top with <b>Text</b>.</li>
+   <li><b>To keep text readable,</b> zoom the PDF in before you capture. The capture keeps the sharpness you see on screen.</li>
+   <li><b>If capture is blocked,</b> take a screenshot with your system tool and open it here with <a class="inline" href="#on-site">Add image</a>.</li>
+  </ul>
+
+  <h2 id="problems">Common problems and fixes</h2>
+  <div class="tbl-box">
+   <table class="tbl">
+    <thead><tr><th scope="col">Problem</th><th scope="col">Why it happens</th><th scope="col">What to do</th></tr></thead>
+    <tbody>
+     <tr><td>The PDF can’t be captured</td><td>Chrome protects some pages, such as chrome:// pages and the Chrome Web Store</td><td>Open the file from a normal tab, or use your system screenshot and Add image</td></tr>
+     <tr><td>Only part of the page is captured</td><td>The page is in a view mode with its own scroll, like a reader or a pop-up</td><td>Close the view, scroll to the top and use Full Page again</td></tr>
+     <tr><td>The file doesn’t appear after Download</td><td>Chrome asks where to save each file, or downloads are blocked for the site</td><td>Check the download bar and Chrome’s download settings</td></tr>
+     <tr><td>Text in a scan looks blurry</td><td>The page was captured at a small zoom</td><td>Zoom in before capturing and download as PNG</td></tr>
+     <tr><td>Full Page takes a while</td><td>Long pages load images as you scroll, and each screen is captured in turn</td><td>Wait for the progress to finish; keep the tab open</td></tr>
+    </tbody>
+   </table>
+  </div>
+
+  <h2 id="faq">FAQ</h2>
+  <div class="faq">
+   <details open>
+    <summary>Can I edit an annotation after I draw it?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
+    <div class="ans"><p>Yes. Click Select, then click the annotation to move it, resize it, or change its color and thickness. Undo and Redo work for every change.</p></div>
+   </details>
+   <details>
+    <summary>Can I annotate an image that isn’t a web page?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
+    <div class="ans"><p>Yes. Use Add image in the popup or the editor, or drop the file on this page. PNG and JPEG files are supported.</p></div>
+   </details>
+   <details>
+    <summary>Is Blur safe for passwords and personal data?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
+    <div class="ans"><p>Blur is drawn into the downloaded image. Cover the whole area, including the edges of the text, and check the file before you send it.</p></div>
+   </details>
+   <details>
+    <summary>Which format should I choose?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
+    <div class="ans"><p>PNG for interfaces and text, JPEG for photos and smaller files, PDF for printing and sending documents.</p></div>
+   </details>
+   <details>
+    <summary>Where do I find screenshots I made earlier?<svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
+    <div class="ans"><p>Click History in the popup or in the editor toolbar. It lists your earlier captures.</p></div>
+   </details>
+  </div>
+
+ </div>
+</div>
+
+<!-- ============ END: next step ============ -->
+<section aria-labelledby="cta-title" style="padding: 32px 0 24px;">
+ <div class="wrap">
+  <div class="wide" style="border: 1px solid #E6EBF2; border-radius: 12px; overflow: hidden; background: #FFFFFF;">
+   <div style="padding: 40px; display: flex; flex-wrap: wrap; align-items: center; gap: 32px;">
+    <span style="width: 72px; height: 72px; flex-shrink: 0; display: grid; place-items: center; border: 1px solid #001C3E; border-radius: 50%; box-sizing: border-box;"><img src="assets/mascot.png" alt="" style="width: 50px; height: 45px; object-fit: contain; display: block;"></span>
+    <div style="flex: 999 1 360px; min-width: 0;">
+     <h2 id="cta-title" style="margin: 0 0 8px; font-size: 30px; line-height: 38px; font-weight: 600; letter-spacing: -0.4px;">Try it on the page you have open</h2>
+     <p style="margin: 0; font-size: 17px; line-height: 28px; color: #626B79;">Add the extension, click Full Page and mark up your first screenshot in under a minute.</p>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+     <a class="btn-primary" href="https://chromewebstore.google.com/detail/screenshot-extension/mfinafjkbligcjbccappofiadgelfnbb?hl=en">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+      Add to Chrome
+     </a>
+     <a class="btn-quiet" href="#on-site">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0372F9" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg>
+      Annotate an image
+     </a>
+    </div>
+   </div>
+   <div style="min-height: 41px; background: #F5F8FE; border-top: 1px solid #E6EBF2; box-sizing: border-box; padding: 10px 40px; font-size: 13px; line-height: 20px; font-weight: 500; color: #626B79;">Opens the Chrome Web Store page in English.</div>
+  </div>
+ </div>
+</section>
+
+<!-- ============ END: related articles ============ -->
+<section aria-labelledby="rel-title" style="padding: 40px 0 72px;">
+ <div class="wrap">
+  <div class="wide">
+   <h2 id="rel-title" style="margin: 0 0 20px; font-size: 24px; line-height: 32px; font-weight: 600;">Related articles</h2>
+   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+    <a class="rel" href="#">
+     <div style="height: 160px; background: #F5F8FE; border-bottom: 1px solid #E6EBF2; display: grid; place-items: center;"><span class="tile" style="width: 56px; height: 56px; background: #FFFFFF;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 28px; height: 28px;"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg></span></div>
+     <div style="padding: 20px; display: flex; flex-direction: column; gap: 8px;">
+      <span style="font-size: 13px; line-height: 16px; font-weight: 500; color: #626B79;">Guide · [N] min read</span>
+      <span class="rel-t" style="font-size: 18px; line-height: 26px; font-weight: 600;">How to add arrows to a screenshot</span>
+     </div>
+    </a>
+    <a class="rel" href="#">
+     <div style="height: 160px; background: #F5F8FE; border-bottom: 1px solid #E6EBF2; display: grid; place-items: center;"><span class="tile" style="width: 56px; height: 56px; background: #FFFFFF;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 28px; height: 28px;"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"></path></svg></span></div>
+     <div style="padding: 20px; display: flex; flex-direction: column; gap: 8px;">
+      <span style="font-size: 13px; line-height: 16px; font-weight: 500; color: #626B79;">Guide · [N] min read</span>
+      <span class="rel-t" style="font-size: 18px; line-height: 26px; font-weight: 600;">How to blur part of a screenshot</span>
+     </div>
+    </a>
+    <a class="rel" href="#">
+     <div style="height: 160px; background: #F5F8FE; border-bottom: 1px solid #E6EBF2; display: grid; place-items: center;"><span class="tile" style="width: 56px; height: 56px; background: #FFFFFF;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width: 28px; height: 28px;"><path d="M15 12h-5"></path><path d="M15 8h-5"></path><path d="M19 17V5a2 2 0 0 0-2-2H4"></path><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"></path></svg></span></div>
+     <div style="padding: 20px; display: flex; flex-direction: column; gap: 8px;">
+      <span style="font-size: 13px; line-height: 16px; font-weight: 500; color: #626B79;">Guide · [N] min read</span>
+      <span class="rel-t" style="font-size: 18px; line-height: 26px; font-weight: 600;">How to take a full page screenshot in Chrome</span>
+     </div>
+    </a>
+   </div>
+  </div>
+ </div>
+</section>
+
+</article>
+</main>
+
+<footer style="border-top: 1px solid #E6EBF2; background: #F5F8FE;">
+ <div class="wrap" style="min-height: 64px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding-top: 16px; padding-bottom: 16px;">
+  <span style="font-size: 14px; line-height: 20px; color: #626B79;">© [YYYY] Screenshot Extension</span>
+  <nav aria-label="Footer" style="display: flex; gap: 4px;">
+   <a class="nav-link" href="#" style="font-size: 14px;">Privacy</a>
+   <a class="nav-link" href="#" style="font-size: 14px;">Help</a>
+  </nav>
+ </div>
+</footer>
+
+</div>
+</body>
+</html>
