@@ -1,0 +1,65 @@
+/* Screenshot Extension — homepage (Blog link in the header). Values from design-system-claude/actual (start popup). */
+body{margin:0;background:#EDF2F9;color:#001C3E;font-family:Inter,system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+*{box-sizing:border-box}
+a{color:#001C3E;text-decoration:none}
+a:hover{color:#0372F9}
+
+/* Fluid scale: values at 1280 px wide → values at 1920 px wide */
+.wrap{width:100%;max-width:clamp(1200px,66.7vw,1280px);margin:0 auto;padding:0 40px}
+.hdr{height:clamp(72px,4.6vw,88px)}
+.logo-disc{width:clamp(40px,2.5vw,48px);height:clamp(40px,2.5vw,48px)}
+.logo-disc img{width:80%;height:70%}
+.brand{font-size:clamp(15px,.9vw,17px);line-height:1.33}
+.eyebrow{margin:0 0 clamp(10px,.63vw,12px);font-size:clamp(17px,1.04vw,20px);line-height:1.4}
+.h1{font-size:clamp(64px,4.6vw,88px);line-height:1.1;letter-spacing:-.025em}
+.lede{margin:clamp(20px,1.25vw,24px) 0 0;font-size:clamp(19px,1.2vw,23px);line-height:1.55;max-width:26em}
+.cta{margin-top:clamp(28px,1.67vw,32px);gap:clamp(10px,.63vw,12px)}
+.note{font-size:clamp(14px,.8vw,15px);line-height:1.4}
+.ftr{height:clamp(56px,3.6vw,68px)}
+
+.btn-primary{display:inline-flex;align-items:center;justify-content:center;height:clamp(48px,2.9vw,56px);padding:0 clamp(24px,1.6vw,30px);border-radius:8px;background:#0262D6;color:#FFFFFF;font-weight:600;font-size:clamp(15px,.9vw,17px);line-height:20px;white-space:nowrap;transition:background-color 200ms cubic-bezier(0,0,.2,1)}
+.btn-primary:hover{background:#0254B8;color:#FFFFFF}
+.btn-primary:active{background:#0254B8}
+.btn-primary.sm{height:clamp(36px,2.3vw,44px);padding:0 clamp(16px,1vw,20px);font-weight:500;font-size:clamp(15px,.85vw,16px)}
+.nav-link{display:inline-flex;align-items:center;gap:8px;height:clamp(36px,2.3vw,44px);padding:0 clamp(12px,.8vw,16px);border-radius:8px;font-weight:500;font-size:clamp(15px,.85vw,16px);line-height:20px;color:#001C3E;white-space:nowrap;transition:background-color 200ms cubic-bezier(0,0,.2,1)}
+.nav-link:hover{background:rgba(3,114,249,.08);color:#001C3E}
+.nav-link svg{width:18px;height:18px;flex-shrink:0;display:block}
+.foot-link{display:inline-flex;align-items:center;height:32px;padding:0 10px;margin-right:-10px;border-radius:8px;color:#626B79;transition:background-color 200ms cubic-bezier(0,0,.2,1),color 200ms cubic-bezier(0,0,.2,1)}
+.foot-link:hover{background:rgba(3,114,249,.08);color:#001C3E}
+a:focus-visible{outline:none;box-shadow:0 0 0 2px #FFFFFF,0 0 0 4px #0372F9}
+
+/* Start popup, values from design-system-claude/actual/components/StartPopup; shadow lighter for the site */
+.sp{width:304px;background:#FFFFFF;box-shadow:0 1px 2px rgba(3,32,72,.06),0 6px 16px rgba(3,32,72,.08);color:#001C3E;text-align:left}
+.sp-head{display:flex;align-items:center;gap:10px;padding:10px 16px 10px 27px}
+.sp-logo{width:40px;height:40px;flex-shrink:0;display:grid;place-items:center;border:1px solid #001C3E;border-radius:50%}
+.sp-logo img{width:32px;height:28px;object-fit:contain;display:block}
+.sp-title{font-weight:600;font-size:15px;line-height:20px}
+.sp-list{display:flex;flex-direction:column;gap:8px;padding:0 16px 12px}
+.sp-row{display:flex;align-items:center;gap:12px;height:48px;padding:0 12px;background:#FFFFFF;border:1px solid #E6EBF2;border-radius:8px;font-weight:500;font-size:15px;line-height:20px}
+.sp-tile{width:36px;height:36px;flex-shrink:0;display:grid;place-items:center;border-radius:50%;background:#EEF5FF;color:#0372F9}
+.sp-tile svg{width:20px;height:20px;display:block}
+.sp-bar{position:relative;height:41px;margin-top:-4px;background:#F5F8FE;border-top:1px solid #E6EBF2}
+.sp-ic{position:absolute;top:6px;width:28px;height:28px;display:grid;place-items:center;border-radius:50%;color:#626B79}
+.sp-ic svg{width:16px;height:16px;display:block}
+.sp-add{position:absolute;top:6px;left:75px;width:118px;height:28px;background:#FFFFFF;border:1px solid #CFE2FD;border-radius:8px;font-weight:500;font-size:13px;line-height:16px}
+.sp-add svg{position:absolute;left:13px;top:5px;width:16px;height:16px}
+.sp-add span{position:absolute;left:37px;top:5px;white-space:nowrap}
+
+/* Popup scale by screen height; vector, so text stays sharp */
+.pop-zoom{zoom:1.15}
+@media (min-height:760px){.pop-zoom{zoom:1.28}}
+@media (min-height:900px){.pop-zoom{zoom:1.42}}
+@media (min-height:1000px){.pop-zoom{zoom:1.62}}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media (max-width:720px){
+ .wrap{padding:0 16px}
+ .h1{font-size:44px!important}
+ .pop-zoom{zoom:1}
+ .hide-sm{display:none!important}
+}
+
+/* Clarify the installed product for screen-reader users without changing the visible CTA. */
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.skip-link{position:absolute;top:12px;left:12px;z-index:1;padding:12px 16px;background:#FFFFFF;border-radius:8px;transform:translateY(-200%)}
+.skip-link:focus{transform:translateY(0)}
